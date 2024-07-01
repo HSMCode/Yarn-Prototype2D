@@ -1,0 +1,22 @@
+﻿title: StartMenu
+---
+<<camera Title>>
+<<fadeIn 1>>
+Wähle ein Spiel! #line:03149e3 
+-> Play the Linda's YarnDemo2D #line:0fb1891 
+    <<jump StartYarnDemo2D>>
+-> Save Moorrast #line:0c0afd4 
+    <<jump StartMoorrast>>
+-> Das Perfekte Dinner #line:0111200 
+    <<jump StartDinner>>    
+-> Dating Sim #line:0cac944 
+    <<jump StartDatingSim>>     
+-> Der Anfang im Garten #line:0421a89 
+    <<jump DerAnfang>> 
+-> Im Zirkus #line:06329a7 
+    <<jump StartZirkus>> 
+-> Hostel #line:07a07e5 
+    <<jump StartHostel>> 
+-> Little Red Riding Hood 3 #line:095d979 
+    <<jump StartLittleRed>>     
+===

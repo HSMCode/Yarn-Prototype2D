@@ -1,0 +1,21 @@
+{
+  "projectFileVersion": 2,
+  "sourceFiles": [
+    "**/*.yarn"
+  ],
+  "excludeFiles": [
+    "**/*~/*"
+  ],
+  "localisation": {
+    "en": {
+      "assets": "Voice Overs/en",
+      "strings": "en-Strings.csv"
+    },
+    "de": {
+      "assets": "Voice Overs/de",
+      "strings": "de-Strings.csv"
+    }
+  },
+  "baseLanguage": "de",
+  "compilerOptions": {}
+}

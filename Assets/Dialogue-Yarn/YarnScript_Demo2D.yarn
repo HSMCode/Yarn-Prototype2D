@@ -1,0 +1,87 @@
+﻿title: StartYarnDemo2D
+---
+<<camera Title>>
+<<wait 0>>
+<<fadeIn 1>>
+Cat: Guck mal, der Titel fehlt noch.  #line:VoiceOverCat01
+Cat: Du kannst ihn setzen auf der component: "Ui Layers/Title Layer/Title Image". #line:VoiceOverCat02
+<<fadeOut 1>>
+<<camera Backdrop>>
+<<swapBackground Valley>>
+<<move Cat Backdrop Left>>
+<<fadeIn 1>>
+<<playSFX boing>>
+Cat: Willkommen im Tal #line:VoiceOverCat03
+Character2: Jetzt auch mit farbigem Text. Die Farben können pro Character auf dem GameObject "Character Color View" gesetzt werden. #line:04e6691 
+<<wait 1>>
+Cat: Guck im YarnScript um zu sehen, wie du meine Gesichtsausdrücke wechseln kannst. #line:04b1e98 
+<<expression Cat happy>>
+Cat: Hier ist noch ein anderer Gesichtsausdruck von mir. #line:05eb909 
+<<expression Cat angry>>
+<<wait 1>>
+Cat: Super, und so kannst du die Basis Animationen setzen. Zuerst über "playAnimation": #line:05e00c9 
+<<playAnimation Cat Jump>>
+Cat: Und dann über "triggerAnimation". Dafür muss aber auch ein neuer Trigger im Animation Controller aufgesetzt werden.  #line:04d7a8a 
+<<triggerAnimation Cat Shake>>
+<<wait 1>>
+Cat: Ok. Ich hab genug vom Tal, so kannst du Hintergründe austauschen: #line:00b4344 
+<<swapBackground Sunset>>
+Cat: Zack! Und ich bin sogar noch da, weil der Hintergrund nur getauscht wurde. Praktisch, oder! #line:089eef8 
+Cat: Ich könnte aber auch meine Position wechseln.  #line:078046d 
+<<move Cat Backdrop Right>>
+Cat: Tada! #line:0b61ae3 
+Cat: Weitere Backgrounds (Name+Bild) können auf dem GameObject "Scene Director" ergänzt werden. #line:03d9e30 
+<<wait 1>>
+Cat: Für einen schöneren Übergang, benutzt fadeIn und fadeOut: #line:08f8a1d 
+<<fadeOut 1>>
+<<swapBackground Mountain>>
+<<move Cat Backdrop Center>>
+<<fadeIn 1>>
+Cat: Großartig! #line:0710a3a 
+<<playSFX boing>>
+<<wait 1>>
+Cat: Noch was? Ach, ja Soundeffekte könnt ihr über einen Namen abspielen.  #line:0738cff 
+Cat: Name und Audioclip müssen dazu auf dem GameObject "Scene Director" ergänzt werden. #line:0dfe33b 
+<<wait 1>>
+<<playAnimation Cat Idle>>
+Cat: Weitere Charactere können über das Prefab "CharacterVariant_" erstellt werden.  #line:01b7e8a 
+Cat: Zieh dafür einfach das Prefab aus dem gleichnamigen Ordner in die Hierachy und benennt das GameObject um! #line:0828ab5 
+Cat: Geht dann in den Prefab-Modus (Objekt auswählen und den rechten Pfeil anklicken) und weißt dann erst die neuen Sprites zu! #line:0ec02eb 
+<<wait 1>>
+Cat: Ok, das waren die Grundlagen.  #line:07c5734 
+Cat: Möchtest du noch etwas wissen? #line:01ec0a2 
+    -> Localisation #line:0925127 
+        <<jump Localisation>>
+    -> Dubbing #line:02afa43 
+        <<jump Dubbing>>
+    -> NE, ICH WILL HIER RAUS! #line:00c8e5b 
+        <<jump StartMenu>>
+        <<fadeOut 1>>
+===
+
+
+title: Localisation
+---
+Cat: Gucke dir auf dem YarnProjekt die Einstellungen für DE und EN an.  #line:0c3dcbb 
+Cat: Update hier mit den Buttons, wenn du neuen Text hinzugefügt hast:  #line:0798236 
+Cat: "Add Line Tags to Scripts." sowie "Update Existing Strings Files". #line:0f45dab 
+    -> Und Dubbing ? #line:099a87f 
+        <<jump Dubbing>>
+    -> Ok. Danke. #line:007225a 
+        <<jump StartMenu>>
+        <<fadeOut 1>>
+===
+
+
+title: Dubbing
+---
+Cat: Generiere die Strings für die Line IDs mit:  #line:0e729b9 
+Cat: "Add Line Tags to Scripts." sowie "Update Existing Strings Files". #line:018c890 
+Cat: Schaue in die Assets Ordner unter Voice Dubbing. Hier müssen die AudioClips mit der richtigen Benennung nur abgelegt werden.  #line:0e8105f 
+Cat: Dann zieht sich Yarn diese Datei selbst. Schau dir das Beispiel mit VoiceOverCat01 an.  #line:040fc76 
+    -> Und Localisation #line:0e954f3 
+        <<jump Localisation>>   
+    -> Ok. Danke. #line:0f1334f 
+        <<jump StartMenu>>
+            <<fadeOut 1>>
+===
